@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_Oc5GMEXMEfCn3vmOuHnWnQ" name="dfadsf" dataPackage="_Oc5GMUXMEfCn3vmOuHnWnQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/seidor/Desktop/TIPUS_CONTRACTE.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="2" FirstLineCaption="true" SheetName="GRUP_EIC" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="GRUP_EIC:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Oc5GMUXMEfCn3vmOuHnWnQ" name="default" dataManager="_Oc5GMEXMEfCn3vmOuHnWnQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Oc5GMkXMEfCn3vmOuHnWnQ" id="_rNjqoEXLEfCn3vmOuHnWnQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oc5GM0XMEfCn3vmOuHnWnQ" label="TIPUS_CONTRACTE_CODI" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oc5GNEXMEfCn3vmOuHnWnQ" label="contracte" length="47" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oc5GNUXMEfCn3vmOuHnWnQ" label="AGRUP_EIC_CODI" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oc5GNkXMEfCn3vmOuHnWnQ" label="economia_i_coneixement__CONTRACTE_2" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Oc5GN0XMEfCn3vmOuHnWnQ" label="tipus_contracte" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

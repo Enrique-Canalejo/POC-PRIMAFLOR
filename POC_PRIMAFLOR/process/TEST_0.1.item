@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:5VUIekO63dnzSy3na/GkE9UIquFlmsvdyplwxYRa" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Np5HjG27l+irqdyMzAOwE8/onFj13qgot5jZJa/v" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPTableInput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tSAPTableInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.101 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Business/SAP" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tSAPTableInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_OCQCEDyLEfC_5uix8pgQrg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERTYPE" value="ApplicationServer"/>
+    <elementParameter field="TEXT" name="CLIENT" value="&quot;200&quot;"/>
+    <elementParameter field="TEXT" name="USERID" value="&quot;qlik&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:m407xYkW9Fk0lzwDh06+8g1u4eGgm70iazrD8ddJ7T19Iww4bvSq"/>
+    <elementParameter field="TEXT" name="LANGUAGE" value="&quot;ES&quot;"/>
+    <elementParameter field="TEXT" name="HOSTNAME" value="&quot;10.11.42.130&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMNUMBER" value="&quot;00&quot;"/>
+    <elementParameter field="TEXT" name="SYSTEMID" value="&quot;PRD&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUPNAME" value="&quot;tGroup&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_OCQCEDyLEfC_5uix8pgQrg - MARA" show="false"/>
+    <elementParameter field="TEXT" name="RFC_SERVER_URL" value="&quot;http://localhost:8080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_ID" value="&quot;default&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PACKAGE_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="THREAD_COUNT" value="2" show="false"/>
+    <elementParameter field="TEXT" name="TOPIC_PARTITION_COUNT" value="2" show="false"/>
+    <elementParameter field="TEXT" name="MAX_TIME_TO_WAIT" value="60" show="false"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;MARA&quot;"/>
+    <elementParameter field="CHECK" name="CDS_VIEWS" value="false"/>
+    <elementParameter field="TABLE" name="CDS_VIEW_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="FROM_STATEMENT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILTER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="TEXT" name="START_ROW" value="-1"/>
+    <elementParameter field="TEXT" name="MAX_ROW_COUNT" value="-1"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="sap_id" show="false"/>
+    <elementParameter field="LABEL" name="NOTE_DATASOURCE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="SAP_DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_FTP_BATCH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_PROTOCOL" value="FTP" show="false"/>
+    <elementParameter field="TEXT" name="FTP_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTP_PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTP_USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="FTP_PASS" value="enc:system.encryption.key.v1:OHwaTSzxlCi+IKHoTJOob52/13u5v87KhRAy5vQS" show="false"/>
+    <elementParameter field="CHECK" name="USE_SERVER_LOGICAL_PATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FTP_DIR" value="&quot;/usr/sap/talend/ftp/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GENERATED_FILENAME_PREFIX" value="&quot;current_data_file&quot;" show="false"/>
+    <elementParameter field="TEXT" name="START_TIMEOUT" value="8000" show="false"/>
+    <elementParameter field="TEXT" name="DATA_POLLING_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ABORT_JOB_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STREAMING_MODE" value="false"/>
+    <elementParameter field="CHECK" name="NUMC_AS_STRING" value="false"/>
+    <elementParameter field="CHECK" name="DATE_AS_STRING" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_SPACES" value="true"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_MAXLENGTH_FOR_VARIABLE_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_MAXLENGTH_FOR_VARIABLE_LENGTH" value="100" show="false"/>
+    <elementParameter field="TABLE" name="SAP_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;api.use_z_talend_read_table&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;true&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="KAFKA_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="FETCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="EXTRACT_REMOTE_PATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_DIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REPLACE_CONTROL_CHARACTERS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="FETCH_ALL_AT_ONCE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MARA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="MARA" name="tSAPTableInput_2">
+      <column comment="Client" key="true" length="3" name="MANDT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number" key="true" length="40" name="MATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Created On" key="false" length="8" name="ERSDA" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of Person Responsible for Creating the Object" key="false" length="12" name="ERNAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date of Last Change" key="false" length="8" name="LAEDA" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Name of person who changed object" key="false" length="12" name="AENAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maintenance status of complete material" key="false" length="15" name="VPSTA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maintenance status" key="false" length="15" name="PSTAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Flag Material for Deletion at Client Level" key="false" length="1" name="LVORM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material type" key="false" length="4" name="MTART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Industry Sector" key="false" length="1" name="MBRSH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Group" key="false" length="9" name="MATKL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Old Material Number" key="false" length="40" name="BISMT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Base Unit of Measure" key="false" length="3" name="MEINS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Purchase Order Unit of Measure" key="false" length="3" name="BSTME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Document number (without document management system)" key="false" length="22" name="ZEINR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Document type (without Document Management system)" key="false" length="3" name="ZEIAR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Document version (without Document Management system)" key="false" length="2" name="ZEIVR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Page format of document (without Document Management system)" key="false" length="4" name="ZEIFO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Document change number (without document management system)" key="false" length="6" name="AESZN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Page number of document (without Document Management system)" key="false" length="3" name="BLATT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of sheets (without Document Management system)" key="false" length="3" name="BLANZ" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Production/inspection memo" key="false" length="18" name="FERTH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Page Format of Production Memo" key="false" length="4" name="FORMT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Size/dimensions" key="false" length="32" name="GROES" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Basic Material" key="false" length="48" name="WRKST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Industry Standard Description (such as ANSI or ISO)" key="false" length="18" name="NORMT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Laboratory/design office" key="false" length="3" name="LABOR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Purchasing Value Key" key="false" length="4" name="EKWSL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Gross Weight" key="false" length="13" name="BRGEW" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Net weight" key="false" length="13" name="NTGEW" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Weight Unit" key="false" length="3" name="GEWEI" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Volume" key="false" length="13" name="VOLUM" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Volume unit" key="false" length="3" name="VOLEH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Container requirements" key="false" length="2" name="BEHVO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Storage conditions" key="false" length="2" name="RAUBE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Temperature conditions indicator" key="false" length="2" name="TEMPB" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Low-Level Code" key="false" length="3" name="DISST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Transportation Group" key="false" length="4" name="TRAGR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Hazardous material number" key="false" length="40" name="STOFF" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Division" key="false" length="2" name="SPART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Competitor" key="false" length="10" name="KUNNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="European Article Number (EAN) - obsolete!!!!!" key="false" length="13" name="EANNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Quantity: Number of GR/GI slips to be printed" key="false" length="13" name="WESCH" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Procurement rule" key="false" length="1" name="BWVOR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Source of Supply" key="false" length="1" name="BWSCL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Season Category" key="false" length="4" name="SAISO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Label type" key="false" length="2" name="ETIAR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Label form" key="false" length="2" name="ETIFO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Deactivated" key="false" length="1" name="ENTAR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="International Article Number (EAN/UPC)" key="false" length="18" name="EAN11" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Category of International Article Number (EAN)" key="false" length="2" name="NUMTP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Length" key="false" length="13" name="LAENG" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Width" key="false" length="13" name="BREIT" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Height" key="false" length="13" name="HOEHE" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Unit of Dimension for Length/Width/Height" key="false" length="3" name="MEABM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product hierarchy" key="false" length="18" name="PRDHA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Stock Transfer Net Change Costing" key="false" length="1" name="AEKLK" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="CAD Indicator" key="false" length="1" name="CADKZ" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="QM in Procurement is Active" key="false" length="1" name="QMPUR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Allowed packaging weight" key="false" length="13" name="ERGEW" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Unit of weight (allowed packaging weight)" key="false" length="3" name="ERGEI" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Allowed packaging volume" key="false" length="13" name="ERVOL" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Volume unit (allowed packaging volume)" key="false" length="3" name="ERVOE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Excess Weight Tolerance for Handling unit" key="false" length="3" name="GEWTO" nullable="true" pattern="" precision="1" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Excess Volume Tolerance of the Handling Unit" key="false" length="3" name="VOLTO" nullable="true" pattern="" precision="1" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Variable Purchase Order Unit Active" key="false" length="1" name="VABME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Revision Level Has Been Assigned to the Material" key="false" length="1" name="KZREV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Configurable Material" key="false" length="1" name="KZKFG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Batch management requirement indicator" key="false" length="1" name="XCHPF" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Packaging Material Type" key="false" length="4" name="VHART" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maximum level (by volume)" key="false" length="3" name="FUELG" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Stacking factor" key="false" length="5" name="STFAK" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="Material Group: Packaging Materials" key="false" length="4" name="MAGRV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Authorization Group" key="false" length="4" name="BEGRU" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Valid-From Date" key="false" length="8" name="DATAB" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Deletion date" key="false" length="8" name="LIQDT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Season Year" key="false" length="4" name="SAISJ" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Price Band Category" key="false" length="2" name="PLGTP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Empties Bill of Material" key="false" length="1" name="MLGUT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="External Material Group" key="false" length="18" name="EXTWG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cross-Plant Configurable Material" key="false" length="40" name="SATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Category" key="false" length="2" name="ATTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Material can be co-product" key="false" length="1" name="KZKUP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: The material has a follow-up material" key="false" length="1" name="KZNFM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Pricing Reference Material" key="false" length="40" name="PMATA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cross-Plant Material Status" key="false" length="2" name="MSTAE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cross-distribution-chain material status" key="false" length="2" name="MSTAV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Date from which the cross-plant material status is valid" key="false" length="8" name="MSTDE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Date from which the X-distr.-chain material status is valid" key="false" length="8" name="MSTDV" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="Tax classification of the material" key="false" length="1" name="TAKLV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Catalog Profile" key="false" length="9" name="RBNRM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Minimum Remaining Shelf Life" key="false" length="4" name="MHDRZ" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Total shelf life" key="false" length="4" name="MHDHB" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Storage percentage" key="false" length="3" name="MHDLP" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Content unit" key="false" length="3" name="INHME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Net contents" key="false" length="13" name="INHAL" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Comparison price unit" key="false" length="5" name="VPREH" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="IS-R Labeling: material grouping (deactivated in 4.0)" key="false" length="18" name="ETIAG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Gross contents" key="false" length="13" name="INHBR" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Quantity Conversion Method" key="false" length="1" name="CMETH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Internal object number" key="false" length="18" name="CUOBF" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Environmentally Relevant" key="false" length="1" name="KZUMW" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Product allocation determination procedure" key="false" length="18" name="KOSCH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Pricing profile for variants" key="false" length="1" name="SPROF" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material qualifies for discount in kind" key="false" length="1" name="NRFHG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Manufacturer Part Number" key="false" length="40" name="MFRPN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Manufacturer number" key="false" length="10" name="MFRNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Number of firm's own (internal) inventory-managed material" key="false" length="40" name="BMATN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Mfr part profile" key="false" length="4" name="MPROF" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Units of measure usage" key="false" length="1" name="KZWSM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Rollout in a Season" key="false" length="2" name="SAITY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Dangerous Goods Indicator Profile" key="false" length="3" name="PROFL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Highly Viscous" key="false" length="1" name="IHIVI" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: In Bulk/Liquid" key="false" length="1" name="ILOOS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Level of Explicitness for Serial Number" key="false" length="1" name="SERLV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Packaging Material is Closed Packaging" key="false" length="1" name="KZGVH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Approved batch record required" key="false" length="1" name="XGCHP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Assign effectivity parameter values/ override change numbers" key="false" length="1" name="KZEFF" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material completion level" key="false" length="2" name="COMPL" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Period Indicator for Shelf Life Expiration Date" key="false" length="1" name="IPRKZ" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Rounding rule for calculation of SLED" key="false" length="1" name="RDMHD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Product composition printed on packaging" key="false" length="1" name="PRZUS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="General item category group" key="false" length="4" name="MTPOS_MARA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Generic Material with Logistical Variants" key="false" length="1" name="BFLME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Is Locked" key="false" length="1" name="MATFI" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Relevant for Configuration Management" key="false" length="1" name="CMREL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Assortment List Type" key="false" length="1" name="BBTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Expiration Date" key="false" length="1" name="SLED_BBD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Global Trade Item Number Variant" key="false" length="2" name="GTIN_VARIANT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number of the Generic Material in Prepack Materials" key="false" length="40" name="GENNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Reference material for materials packed in same way" key="false" length="40" name="RMATP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Global Data Synchronization-Relevant" key="false" length="1" name="GDS_RELEVANT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Acceptance At Origin" key="false" length="1" name="WEORA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Standard HU Type" key="false" length="4" name="HUTYP_DFLT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Pilferable" key="false" length="1" name="PILFERABLE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Warehouse Storage Condition" key="false" length="2" name="WHSTC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Warehouse Material Group" key="false" length="4" name="WHMATGR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Handling Indicator" key="false" length="4" name="HNDLCODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Relevant for Hazardous Substances" key="false" length="1" name="HAZMAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Handling Unit Type" key="false" length="4" name="HUTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Variable Tare Weight" key="false" length="1" name="TARE_VAR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maximum Allowed Capacity of Packaging Material" key="false" length="15" name="MAXC" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Overcapacity Tolerance of the Handling Unit" key="false" length="3" name="MAXC_TOL" nullable="true" pattern="" precision="1" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Maximum Packing Length of Packaging Material" key="false" length="15" name="MAXL" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Maximum Packing Width of Packaging Material" key="false" length="15" name="MAXB" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Maximum Packing Height of Packaging Material" key="false" length="15" name="MAXH" nullable="true" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Unit of Measure for Maximum Packing Length/Width/Height" key="false" length="3" name="MAXDIM_UOM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Country of Origin of Material (Non-Preferential Origin)" key="false" length="3" name="HERKL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material freight group" key="false" length="8" name="MFRGR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Quarantine Period" key="false" length="3" name="QQTIME" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Time Unit for Quarantine Period" key="false" length="3" name="QQTIMEUOM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Quality Inspection Group" key="false" length="4" name="QGRP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Serial Number Profile" key="false" length="4" name="SERIAL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Form Name" key="false" length="30" name="PS_SMARTFORM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="EWM CW: Logistics Unit of Measure" key="false" length="3" name="LOGUNIT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="EWM CW: Material Is a Catch Weight Material" key="false" length="1" name="CWQREL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="EWM CW: Catch Weight Profile for Entering CW Quantity" key="false" length="2" name="CWQPROC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Catch Weight Tolerance Group" key="false" length="9" name="CWQTOLGR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Adjustment Profile" key="false" length="3" name="ADPROF" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ID for an Intellectual Property (CRM Product)" key="false" length="40" name="IPMIPPRODUCT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Variant Price Allowed (for Material Master)" key="false" length="1" name="ALLOW_PMAT_IGNO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Medium" key="false" length="6" name="MEDIUM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Commodity" key="false" length="18" name="COMMODITY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Contains Non-Textile Parts of Animal Origin" key="false" length="1" name="ANIMAL_ORIGIN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: New Textile Composition Function" key="false" length="1" name="TEXTILE_COMP_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Time of Last Change" key="false" length="6" name="LAST_CHANGED_TIME" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true"/>
+      <column comment="Segmentation Structure" key="false" length="4" name="SGT_CSGR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Segmentation Strategy" key="false" length="8" name="SGT_COVSA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Segmentation Material Master Status" key="false" length="1" name="SGT_STAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Segmentation Strategy Scope" key="false" length="1" name="SGT_SCOPE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Segmentation Relevant" key="false" length="1" name="SGT_REL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ANP Code" key="false" length="9" name="ANP" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Code of Protected Species Management" key="false" length="2" name="PSM_CODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fashion Information Field: 1" key="false" length="10" name="FSH_MG_AT1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fashion Information Field: 2" key="false" length="10" name="FSH_MG_AT2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fashion Information Field: 3" key="false" length="6" name="FSH_MG_AT3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Use of Season" key="false" length="1" name="FSH_SEALV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Indicator: Season Active in Inventory Management" key="false" length="1" name="FSH_SEAIM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Conversion ID for Characteristic Value Conversion" key="false" length="2" name="FSH_SC_MID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Dummy Field" key="false" length="1" name="DUMMY_PRD_INCL_EEW_PS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Internal Key for Product" key="false" length="32" name="SCM_MATID_GUID16" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="Internal Number (UID) for Product" key="false" length="22" name="SCM_MATID_GUID22" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maturation Time" key="false" length="11" name="SCM_MATURITY_DUR" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Obsolete. Use /SAPAPO/MATKEY-/SAPAPO/SHELF_LIFE_REQ_MIN." key="false" length="11" name="SCM_SHLF_LFE_REQ_MIN" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Required Maximum Shelf Life" key="false" length="11" name="SCM_SHLF_LFE_REQ_MAX" nullable="true" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Preferred Alternative UoM for Warehouse Operations" key="false" length="3" name="SCM_PUOM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Is Activated for CW" key="false" length="1" name="_CWM_XCWMAT" nullable="true" originalDbColumnName="/CWM/XCWMAT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Valuation Unit of Measure" key="false" length="3" name="_CWM_VALUM" nullable="true" originalDbColumnName="/CWM/VALUM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Tolerance Group for CWM" key="false" length="9" name="_CWM_TOLGR" nullable="true" originalDbColumnName="/CWM/TOLGR" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Consider Complete Tare for each Reference Unit of Measure" key="false" length="1" name="_CWM_TARA" nullable="true" originalDbColumnName="/CWM/TARA" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Reference Unit of Measure for the TARE Calculation" key="false" length="3" name="_CWM_TARUM" nullable="true" originalDbColumnName="/CWM/TARUM" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Loading Units" key="false" length="8" name="_BEV1_LULEINH" nullable="true" originalDbColumnName="/BEV1/LULEINH" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Loading Unit Group: IS Beverage" key="false" length="3" name="_BEV1_LULDEGRP" nullable="true" originalDbColumnName="/BEV1/LULDEGRP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Structure Category for Material Relationship" key="false" length="1" name="_BEV1_NESTRUCCAT" nullable="true" originalDbColumnName="/BEV1/NESTRUCCAT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Tolerance Type ID" key="false" length="4" name="_DSD_SL_TOLTYP" nullable="true" originalDbColumnName="/DSD/SL_TOLTYP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Counting Group" key="false" length="10" name="_DSD_SV_CNT_GRP" nullable="true" originalDbColumnName="/DSD/SV_CNT_GRP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="DSD Grouping" key="false" length="6" name="_DSD_VC_GROUP" nullable="true" originalDbColumnName="/DSD/VC_GROUP" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cable Diameter" key="false" length="7" name="_SAPMP_KADU" nullable="true" originalDbColumnName="/SAPMP/KADU" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Unit for Dimensions" key="false" length="3" name="_SAPMP_ABMEIN" nullable="true" originalDbColumnName="/SAPMP/ABMEIN" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Cable Diameter Allowance in Percent" key="false" length="5" name="_SAPMP_KADP" nullable="true" originalDbColumnName="/SAPMP/KADP" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Bending Factor" key="false" length="4" name="_SAPMP_BRAD" nullable="true" originalDbColumnName="/SAPMP/BRAD" pattern="" precision="0" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Inner Width" key="false" length="7" name="_SAPMP_SPBI" nullable="true" originalDbColumnName="/SAPMP/SPBI" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Outer Diameter" key="false" length="7" name="_SAPMP_TRAD" nullable="true" originalDbColumnName="/SAPMP/TRAD" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Core Diameter" key="false" length="7" name="_SAPMP_KEDU" nullable="true" originalDbColumnName="/SAPMP/KEDU" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Load Capacity" key="false" length="13" name="_SAPMP_SPTR" nullable="true" originalDbColumnName="/SAPMP/SPTR" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Run-Out Flange Thickness" key="false" length="7" name="_SAPMP_FBDK" nullable="true" originalDbColumnName="/SAPMP/FBDK" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="R-O Flange Height" key="false" length="7" name="_SAPMP_FBHK" nullable="true" originalDbColumnName="/SAPMP/FBHK" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Coil Delivery" key="false" length="1" name="_SAPMP_RILI" nullable="true" originalDbColumnName="/SAPMP/RILI" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Run-Out Flange" key="false" length="1" name="_SAPMP_FBAK" nullable="true" originalDbColumnName="/SAPMP/FBAK" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Maximum Number of Vertical Layers" key="false" length="3" name="_SAPMP_AHO" nullable="true" originalDbColumnName="/SAPMP/AHO" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Smallest Permissible Reel Clearance for a Cable" key="false" length="7" name="_SAPMP_MIFRR" nullable="true" originalDbColumnName="/SAPMP/MIFRR" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Material may be Tilted (Vehicle Space Optimization)" key="false" length="1" name="_VSO_R_TILT_IND" nullable="true" originalDbColumnName="/VSO/R_TILT_IND" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Stacking not Allowed (VSO)" key="false" length="1" name="_VSO_R_STACK_IND" nullable="true" originalDbColumnName="/VSO/R_STACK_IND" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Bottom Layer (Vehicle Space Optimization)" key="false" length="1" name="_VSO_R_BOT_IND" nullable="true" originalDbColumnName="/VSO/R_BOT_IND" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Top Layer (VSO)" key="false" length="1" name="_VSO_R_TOP_IND" nullable="true" originalDbColumnName="/VSO/R_TOP_IND" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Stacking Factor (Vehicle Space Optimization)" key="false" length="3" name="_VSO_R_STACK_NO" nullable="true" originalDbColumnName="/VSO/R_STACK_NO" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Load without Packaging Material (VSO)" key="false" length="1" name="_VSO_R_PAL_IND" nullable="true" originalDbColumnName="/VSO/R_PAL_IND" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Permissible Overhang (Depth) of Packaging Material (VSO)" key="false" length="13" name="_VSO_R_PAL_OVR_D" nullable="true" originalDbColumnName="/VSO/R_PAL_OVR_D" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Permissible Overhang (Width) of Shipping Material (VSO)" key="false" length="13" name="_VSO_R_PAL_OVR_W" nullable="true" originalDbColumnName="/VSO/R_PAL_OVR_W" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Maximum Stacking Height of the Packaging Material (VSO)" key="false" length="13" name="_VSO_R_PAL_B_HT" nullable="true" originalDbColumnName="/VSO/R_PAL_B_HT" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Minimum Stacking Height of the Packaging Material (VSO)" key="false" length="13" name="_VSO_R_PAL_MIN_H" nullable="true" originalDbColumnName="/VSO/R_PAL_MIN_H" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Tolerance to Exceed the Max. Stacking Height (VSO)" key="false" length="13" name="_VSO_R_TOL_B_HT" nullable="true" originalDbColumnName="/VSO/R_TOL_B_HT" pattern="" precision="3" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Number of Materials for each Closed PKM (VSO)" key="false" length="2" name="_VSO_R_NO_P_GVH" nullable="true" originalDbColumnName="/VSO/R_NO_P_GVH" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Unit of Measure Vehicle Space Optimization" key="false" length="3" name="_VSO_R_QUAN_UNIT" nullable="true" originalDbColumnName="/VSO/R_QUAN_UNIT" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Closed Packaging Material Required (VSO)" key="false" length="1" name="_VSO_R_KZGVH_IND" nullable="true" originalDbColumnName="/VSO/R_KZGVH_IND" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Packaging Code" key="false" length="10" name="PACKCODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Dangerous Goods Packaging Status" key="false" length="10" name="DG_PACK_STATUS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Condition Management" key="false" length="1" name="MCOND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Return Code" key="false" length="1" name="RETDELC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Return to Logistics Level" key="false" length="1" name="LOGLEV_RETO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="NATO Stock Number" key="false" length="9" name="NSNID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Overlength Part Number" key="false" length="32" name="OVLPN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Spare Part Class Code" key="false" length="1" name="ADSPC_SPC" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="GUID Variable Object Identification" key="false" length="32" name="VARID" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="Manufacturer Book Part Number" key="false" length="40" name="MSBOOKPARTNO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Single-Unit Batch Def. Value" key="false" length="1" name="DPCBT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Goods Receipt to Posted Single-Unit Batch Allowed" key="false" length="1" name="XGRDT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="FFF class" key="false" length="40" name="IMATN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Supersession chain number" key="false" length="40" name="PICNUM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Creation Status - Seasonal Procurement" key="false" length="2" name="BSTAT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Internal Charactieristic Number for Color Characteristics" key="false" length="10" name="COLOR_ATINN" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Internal Char. Number for Characteristics for Main Sizes" key="false" length="10" name="SIZE1_ATINN" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Internal Char. Number for Characteristics for Second Sizes" key="false" length="10" name="SIZE2_ATINN" nullable="true" pattern="" precision="0" sourceType="BIG_INTEGER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="Characteristic Value for Colors of Variants" key="false" length="18" name="COLOR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Characteristic Value for Main Sizes of Variants" key="false" length="18" name="SIZE1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Characteristic Value for Second Size for Variants" key="false" length="18" name="SIZE2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Characteristic Value for Evaluation Purposes" key="false" length="18" name="FREE_CHAR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Care Codes (such as Washing Code, Ironing Code, etc.)" key="false" length="16" name="CARE_CODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Brand" key="false" length="4" name="BRAND_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Fiber Code for Textiles (Component 1)" key="false" length="3" name="FIBER_CODE1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Percentage Share of Fiber (Component 1)" key="false" length="3" name="FIBER_PART1" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Fiber Code for Textiles (Component 2)" key="false" length="3" name="FIBER_CODE2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Percentage Share of Fiber (Component 2)" key="false" length="3" name="FIBER_PART2" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Fiber Code for Textiles (Component 3)" key="false" length="3" name="FIBER_CODE3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Percentage Share of Fiber (Component 3)" key="false" length="3" name="FIBER_PART3" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Fiber Code for Textiles (Component 4)" key="false" length="3" name="FIBER_CODE4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Percentage Share of Fiber (Component 4)" key="false" length="3" name="FIBER_PART4" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Fiber Code for Textiles (Component 5)" key="false" length="3" name="FIBER_CODE5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Percentage Share of Fiber (Component 5)" key="false" length="3" name="FIBER_PART5" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="Fashion Grade" key="false" length="4" name="FASHGRD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ZZFAM_PRD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ZZFOR_ETIQ" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZZTIPO_EAN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="ZZCOD_BOLSA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Material Number" key="false" length="40" name="ZZMATNR" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="Base Unit of Measure" key="false" length="3" name="ZZMEINS" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZACTPPAL" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZMARCACO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZMARCACOMPRA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZITEMCAMPO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="ZZAGE_PFLNAM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZZVELZON" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZZDTCFLG" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZZWGTCOD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ZZTIME_TO_WARN_FOR_EXP" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="ZZDTE_WIN_TYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="ZZDTE_CODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="ZZATTR_INT1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="ZZATTR_INT2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="ZZATTR_INT3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ZZDIAS_ANT_USO" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ZZPCJDA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="ZZORDINV" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ZGPDI" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ZGPSA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ZGPFE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZAD1D" nullable="true" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZAD1S" nullable="true" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZAD1F" nullable="true" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZAD2D" nullable="true" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZAD2S" nullable="true" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ZAD2F" nullable="true" pattern="" precision="2" sourceType="BIG_DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ZPROD" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ZZMATACTIVA" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZZNIVEL_CONSUMO" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_4IW3QDyCEfCFmueqClYOcA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="TEST" name="TEST"/>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="TEST"/>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="MANDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERSDA" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ERNAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAEDA" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="AENAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VPSTA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PSTAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LVORM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MTART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MBRSH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATKL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BISMT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEINS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BSTME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEINR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEIAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEIVR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEIFO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AESZN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BLATT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BLANZ" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FERTH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FORMT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GROES" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WRKST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NORMT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LABOR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKWSL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BRGEW" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NTGEW" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="GEWEI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VOLUM" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VOLEH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BEHVO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RAUBE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TEMPB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DISST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TRAGR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STOFF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KUNNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EANNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WESCH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BWVOR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BWSCL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAISO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ETIAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ETIFO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ENTAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EAN11" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMTP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAENG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BREIT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="HOEHE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MEABM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRDHA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AEKLK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CADKZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="QMPUR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERGEW" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ERGEI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ERVOL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ERVOE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GEWTO" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VOLTO" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VABME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZREV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZKFG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="XCHPF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VHART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FUELG" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="STFAK" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="MAGRV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BEGRU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATAB" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LIQDT" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="SAISJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PLGTP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MLGUT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EXTWG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SATNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ATTYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZKUP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZNFM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PMATA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MSTAE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MSTAV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MSTDE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MSTDV" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="TAKLV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RBNRM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MHDRZ" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MHDHB" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MHDLP" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="INHME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INHAL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="VPREH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ETIAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INHBR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CMETH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUOBF" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="KZUMW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KOSCH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPROF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NRFHG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MFRPN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MFRNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BMATN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MPROF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZWSM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PROFL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IHIVI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ILOOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SERLV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZGVH" type="id_String" nullable="true"/>
+        <mapperTableEntries name="XGCHP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZEFF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMPL" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IPRKZ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RDMHD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRZUS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MTPOS_MARA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BFLME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATFI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CMREL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BBTYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLED_BBD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTIN_VARIANT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GENNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RMATP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GDS_RELEVANT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WEORA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HUTYP_DFLT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PILFERABLE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WHSTC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WHMATGR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HNDLCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HAZMAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HUTYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TARE_VAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAXC" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAXC_TOL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAXL" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAXB" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAXH" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MAXDIM_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HERKL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MFRGR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="QQTIME" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="QQTIMEUOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="QGRP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SERIAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PS_SMARTFORM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOGUNIT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CWQREL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CWQPROC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CWQTOLGR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADPROF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IPMIPPRODUCT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ALLOW_PMAT_IGNO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MEDIUM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMMODITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANIMAL_ORIGIN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TEXTILE_COMP_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAST_CHANGED_TIME" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="SGT_CSGR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SGT_COVSA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SGT_STAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SGT_SCOPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SGT_REL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ANP" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PSM_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSH_MG_AT1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSH_MG_AT2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSH_MG_AT3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSH_SEALV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSH_SEAIM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FSH_SC_MID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DUMMY_PRD_INCL_EEW_PS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SCM_MATID_GUID16" type="id_byte[]" nullable="true"/>
+        <mapperTableEntries name="SCM_MATID_GUID22" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SCM_MATURITY_DUR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SCM_SHLF_LFE_REQ_MIN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SCM_SHLF_LFE_REQ_MAX" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SCM_PUOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_CWM_XCWMAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_CWM_VALUM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_CWM_TOLGR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_CWM_TARA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_CWM_TARUM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_BEV1_LULEINH" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="_BEV1_LULDEGRP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_BEV1_NESTRUCCAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_DSD_SL_TOLTYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_DSD_SV_CNT_GRP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_DSD_VC_GROUP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_KADU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_ABMEIN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_KADP" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_BRAD" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_SPBI" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_TRAD" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_KEDU" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_SPTR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_FBDK" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_FBHK" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_RILI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_FBAK" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_AHO" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="_SAPMP_MIFRR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_TILT_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_STACK_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_BOT_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_TOP_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_STACK_NO" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_PAL_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_PAL_OVR_D" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_PAL_OVR_W" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_PAL_B_HT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_PAL_MIN_H" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_TOL_B_HT" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_NO_P_GVH" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_QUAN_UNIT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_VSO_R_KZGVH_IND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PACKCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DG_PACK_STATUS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MCOND" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RETDELC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOGLEV_RETO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NSNID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OVLPN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADSPC_SPC" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="VARID" type="id_byte[]" nullable="true"/>
+        <mapperTableEntries name="MSBOOKPARTNO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DPCBT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="XGRDT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IMATN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PICNUM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BSTAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COLOR_ATINN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SIZE1_ATINN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SIZE2_ATINN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="COLOR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SIZE1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SIZE2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FREE_CHAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CARE_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BRAND_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIBER_CODE1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIBER_PART1" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FIBER_CODE2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIBER_PART2" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FIBER_CODE3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIBER_PART3" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FIBER_CODE4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIBER_PART4" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FIBER_CODE5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIBER_PART5" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FASHGRD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZFAM_PRD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZFOR_ETIQ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZTIPO_EAN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZCOD_BOLSA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZMATNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZMEINS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZACTPPAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZMARCACO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZMARCACOMPRA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZITEMCAMPO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZAGE_PFLNAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZVELZON" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZDTCFLG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZWGTCOD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZTIME_TO_WARN_FOR_EXP" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ZZDTE_WIN_TYP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZDTE_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZATTR_INT1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZATTR_INT2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZATTR_INT3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZDIAS_ANT_USO" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ZZPCJDA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZORDINV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZGPDI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZGPSA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZGPFE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZAD1D" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZAD1S" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZAD1F" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZAD2D" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZAD2S" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZAD2F" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="ZPROD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZZMATACTIVA" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ZZNIVEL_CONSUMO" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/out.xls&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING"/>
+    <elementParameter field="CHECK" name="PROTECT_FILE" value="false" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:iAvSbLcRaif+Mh1e2lEbaZguUv207O5F1JH0MbqU" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STREAMING_APPEND" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_STRINGS_TABLE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPTableInput_2" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="TEST" lineStyle="0" metaname="TEST" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="TEST" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPTableInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>
