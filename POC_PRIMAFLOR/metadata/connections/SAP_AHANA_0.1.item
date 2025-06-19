@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:TacokitDatabaseConnection xmi:id="_OIAB0EqOEfC2HcmyIJ5fxA" name="SAP_AHANA" properties="configuration.parameters&#xA;&#xA;[]&#xA;&#xA;configuration.port&#xA;&#xA;80&#xA;&#xA;configuration.dbMapping&#xA;&#xA;saphana_id&#xA;&#xA;configuration.password&#xA;&#xA;enc:system.encryption.key.v1:BYpqfw5R6a3KRrUpOq8CpVSRq0Ohv4uyfPag6DRs/lQaMUMhipc=&#xA;&#xA;configuration.useDataSource&#xA;&#xA;false&#xA;&#xA;__TACOKIT_CONFIG_ID&#xA;&#xA;bmV3amRiYyNKREJDI2RhdGFzdG9yZSNKREJDRGF0YVN0b3Jl&#xA;&#xA;configuration.jdbcClass&#xA;&#xA;com.sap.db.jdbc.Driver&#xA;&#xA;configuration.useSharedDBConnection&#xA;&#xA;false&#xA;&#xA;configuration.grantType&#xA;&#xA;CLIENT_CREDENTIALS&#xA;&#xA;configuration.enableDBType&#xA;&#xA;false&#xA;&#xA;configuration.jdbcDriver&#xA;&#xA;[{configuration.jdbcDriver[].path=mvn:org.talend.libraries/ngdbc/6.0.0/jar}]&#xA;&#xA;configuration.authenticationType&#xA;&#xA;BASIC&#xA;&#xA;configuration.__version&#xA;&#xA;-1&#xA;&#xA;configuration.userId&#xA;&#xA;PrimaBD&#xA;&#xA;configuration.host&#xA;&#xA;&#xA;&#xA;configuration.jdbcUrl&#xA;&#xA;jdbc:sap://10.11.42.152:30015&#xA;&#xA;configuration.setRawUrl&#xA;&#xA;true&#xA;&#xA;__TACOKIT_CONFIG_PARENT_ID&#xA;&#xA;bmV3amRiYyNKREJD&#xA;&#xA;" dataPackage="_aWD6IEqOEfC2HcmyIJ5fxA _aWD6IUqOEfC2HcmyIJ5fxA _aWD6IkqOEfC2HcmyIJ5fxA _aWD6I0qOEfC2HcmyIJ5fxA _aWD6JEqOEfC2HcmyIJ5fxA _aWD6JUqOEfC2HcmyIJ5fxA _aWD6JkqOEfC2HcmyIJ5fxA _aWD6J0qOEfC2HcmyIJ5fxA _aWD6KEqOEfC2HcmyIJ5fxA _aWD6KUqOEfC2HcmyIJ5fxA _aWD6KkqOEfC2HcmyIJ5fxA _aWD6K0qOEfC2HcmyIJ5fxA" DatabaseType="JDBC" SID="" ProductId="JDBC" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_aO9MkEqOEfC2HcmyIJ5fxA" tag="Status" value=""/>
+    <taggedValue xmi:id="_aO9MkUqOEfC2HcmyIJ5fxA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_aO9MkkqOEfC2HcmyIJ5fxA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_aO9Mk0qOEfC2HcmyIJ5fxA" tag="Description" value=""/>
+    <taggedValue xmi:id="_aO9MlEqOEfC2HcmyIJ5fxA" tag="Author" value=""/>
+    <taggedValue xmi:id="_aO9MlUqOEfC2HcmyIJ5fxA" tag="otherParameter"/>
+    <taggedValue xmi:id="_aRe8IEqOEfC2HcmyIJ5fxA" tag="DB ProductName" value="HDB"/>
+    <taggedValue xmi:id="_aRe8IUqOEfC2HcmyIJ5fxA" tag="DB ProductVersion" value="2.00.079.01.1728370356"/>
+    <taggedValue xmi:id="_aRe8IkqOEfC2HcmyIJ5fxA" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:TacokitDatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6IEqOEfC2HcmyIJ5fxA" name="PRIMABD" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6IUqOEfC2HcmyIJ5fxA" name="SAPSR3" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_aWD6LEqOEfC2HcmyIJ5fxA" name="SKAT" id="_aO5iMEqOEfC2HcmyIJ5fxA" label="SKAT" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWD6LUqOEfC2HcmyIJ5fxA" name="MANDT" label="MANDT" length="3" sourceType="NVARCHAR" talendType="id_String" key="true" nullable="false">
+        <taggedValue xmi:id="_aWD6LkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWD6L0qOEfC2HcmyIJ5fxA" body="'000'" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWD6MEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWD6MUqOEfC2HcmyIJ5fxA" name="SPRAS" label="SPRAS" length="1" sourceType="NVARCHAR" talendType="id_String" key="true" nullable="false">
+        <taggedValue xmi:id="_aWD6MkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWD6M0qOEfC2HcmyIJ5fxA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWD6NEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWD6NUqOEfC2HcmyIJ5fxA" name="KTOPL" label="KTOPL" length="4" sourceType="NVARCHAR" talendType="id_String" key="true" nullable="false">
+        <taggedValue xmi:id="_aWD6NkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWD6N0qOEfC2HcmyIJ5fxA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWD6OEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWD6OUqOEfC2HcmyIJ5fxA" name="SAKNR" label="SAKNR" length="10" sourceType="NVARCHAR" talendType="id_String" key="true" nullable="false">
+        <taggedValue xmi:id="_aWD6OkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWD6O0qOEfC2HcmyIJ5fxA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWD6PEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWD6PUqOEfC2HcmyIJ5fxA" name="TXT20" label="TXT20" length="20" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <taggedValue xmi:id="_aWD6PkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWD6P0qOEfC2HcmyIJ5fxA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWEhMEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWEhMUqOEfC2HcmyIJ5fxA" name="TXT50" label="TXT50" length="50" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <taggedValue xmi:id="_aWEhMkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWEhM0qOEfC2HcmyIJ5fxA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWEhNEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWEhNUqOEfC2HcmyIJ5fxA" name="MCOD1" label="MCOD1" length="25" sourceType="NVARCHAR" talendType="id_String" nullable="false">
+        <taggedValue xmi:id="_aWEhNkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWEhN0qOEfC2HcmyIJ5fxA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWEhOEqOEfC2HcmyIJ5fxA" name="NVARCHAR" javaDataType="-9"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_aWEhOUqOEfC2HcmyIJ5fxA" name="LAST_CHANGED_TS" label="LAST_CHANGED_TS" length="15" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <taggedValue xmi:id="_aWEhOkqOEfC2HcmyIJ5fxA" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_aWEhO0qOEfC2HcmyIJ5fxA" body="0" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_aWEhPEqOEfC2HcmyIJ5fxA" name="DECIMAL" numericPrecisionRadix="10" javaDataType="3"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6IkqOEfC2HcmyIJ5fxA" name="SYS" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6I0qOEfC2HcmyIJ5fxA" name="SYS_XSA" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6JEqOEfC2HcmyIJ5fxA" name="_SYS_BI" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6JUqOEfC2HcmyIJ5fxA" name="_SYS_DI" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6JkqOEfC2HcmyIJ5fxA" name="_SYS_PLAN_STABILITY" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6J0qOEfC2HcmyIJ5fxA" name="_SYS_REPO" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6KEqOEfC2HcmyIJ5fxA" name="_SYS_RT" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6KUqOEfC2HcmyIJ5fxA" name="_SYS_SQL_ANALYZER" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6KkqOEfC2HcmyIJ5fxA" name="_SYS_SR_SITE_Secundario" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_aWD6K0qOEfC2HcmyIJ5fxA" name="_SYS_TASK" dataManager="_OIAB0EqOEfC2HcmyIJ5fxA"/>
+</xmi:XMI>

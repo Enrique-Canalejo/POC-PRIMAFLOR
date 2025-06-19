@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Eik-4Eq-EfC2HcmyIJ5fxA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_Eik-4Uq-EfC2HcmyIJ5fxA" comment="" name="ID" prompt="ID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1"/>
+  <contextParameter xmi:id="_Eik-4kq-EfC2HcmyIJ5fxA" comment="" name="NOMBRE_TABLA" prompt="NOMBRE_TABLA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ACDOCA"/>
+  <contextParameter xmi:id="_Eik-40q-EfC2HcmyIJ5fxA" comment="" name="START_TYPE" prompt="START_TYPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="GENERIC"/>
+  <contextParameter xmi:id="_Eik-5Eq-EfC2HcmyIJ5fxA" comment="" name="OUTPUT_EXTENSION" prompt="OUTPUT_EXTENSION?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CSV"/>
+</talendfile:ContextType>

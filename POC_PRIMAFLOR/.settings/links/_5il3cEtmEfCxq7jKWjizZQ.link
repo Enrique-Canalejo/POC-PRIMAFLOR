@@ -1,0 +1,20 @@
+{
+  "itemId" : "_5il3cEtmEfCxq7jKWjizZQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_EiRc4Eq-EfC2HcmyIJ5fxA",
+    "parameterList" : [ {
+      "id" : "_Eik-4Uq-EfC2HcmyIJ5fxA",
+      "name" : "ID"
+    }, {
+      "id" : "_Eik-4kq-EfC2HcmyIJ5fxA",
+      "name" : "NOMBRE_TABLA"
+    }, {
+      "id" : "_Eik-5Eq-EfC2HcmyIJ5fxA",
+      "name" : "OUTPUT_EXTENSION"
+    }, {
+      "id" : "_Eik-40q-EfC2HcmyIJ5fxA",
+      "name" : "START_TYPE"
+    } ]
+  } ]
+}
